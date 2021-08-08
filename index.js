@@ -60,14 +60,11 @@ inquirer.prompt([
     }, {
 
         type: "list",
-        message: "What licences did you use ? ?",
-        name: "licence",
+        message: "What license's did you use ? ?",
+        name: "license",
+        choices: ["MIT license, Apache License, GPL license, N/A"],
         //validate property to check user has provided a value
         validate: (value) => { if (value) { return true } else { return "I need a value to continue" } },
-
-
-
-
     }
 
 ]
