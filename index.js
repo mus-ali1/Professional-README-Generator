@@ -52,6 +52,13 @@ inquirer.prompt([
 
 
 
+    }, {
+
+        type: "input",
+        message: "How can this code be tested?",
+        name: "test"
+
+
     },
     {
 
@@ -61,14 +68,6 @@ inquirer.prompt([
         choices: ["MIT", "Apache", "GPLv3", "Other", "N/A"],
         //validate property to check user has provided a value
         validate: (value) => { if (value) { return true } else { return "I need a value to continue" } },
-    },
-    {
-        type: "input",
-        message: "How can others contribute?",
-        name: "contribute",
-        //validate property to check user has provided a value
-        validate: (value) => { if (value) { return true } else { return "I need a value to continue" } },
-
     },
     {
 
@@ -116,10 +115,11 @@ inquirer.prompt([
         $template += `## Description\n\n${response.description}\n\n`;
         $template += `## Installation\n\n${response.installation}\n\n`;
         $template += `## Usage\n\n${response.usage}\n\n`;
-        $template += `## Credits\n\n${response.credits}\n\n`;
+        $template += `## Credits/Collaborators\n\n${response.credits}\n\n`;
         $template += `## Questions\n\nIf you have any questions feel free to contact me here:\n\n ##### Github: [github.com/${response.username}](https://github.com/${response.username})\n\n ##### Email: [${response.email}](mailto:${response.email}?subject=[GitHub])\n\n`;
+        $template += `## Testing\n\n[${response.test}]\n\n`;
         $template += `## License\n\n[${response.licence}]${licenceInfo}`;
-        $template += `## Contributing\n\n${response.contribute}\n\n`;
+
         $template += `## Application Image\n\n ![Image of Application](${response.image})`;
 
 
