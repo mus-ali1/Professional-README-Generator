@@ -53,7 +53,15 @@ inquirer.prompt([
     {
         type: "input",
         message: "Any instructions and examples of usage ?",
-        name: "installation",
+        name: "usage",
+        //validate property to check user has provided a value
+        validate: (value) => { if (value) { return true } else { return "I need a value to continue" } },
+
+    }, {
+
+        type: "list",
+        message: "What licences did you use ? ?",
+        name: "licence",
         //validate property to check user has provided a value
         validate: (value) => { if (value) { return true } else { return "I need a value to continue" } },
 
@@ -61,6 +69,7 @@ inquirer.prompt([
 
 
     }
+
 ]
 
 
