@@ -119,7 +119,6 @@ inquirer.prompt([
         $template += `## Questions\n\nIf you have any questions feel free to contact me here:\n\n ##### Github: [github.com/${response.username}](https://github.com/${response.username})\n\n ##### Email: [${response.email}](mailto:${response.email}?subject=[GitHub])\n\n`;
         $template += `## Testing\n\n[${response.test}]\n\n`;
         $template += `## License\n\n[${response.licence}]${licenceInfo}`;
-
         $template += `## Application Image\n\n ![Image of Application](${response.image})`;
 
 
