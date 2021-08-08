@@ -60,11 +60,29 @@ inquirer.prompt([
     }, {
 
         type: "list",
-        message: "What license's did you use ? ?",
-        name: "license",
-        choices: ["MIT license, Apache License, GPL license, N/A"],
+        message: "What licence did you use ?",
+        name: "licence",
+        choices: ["MIT licence, Apache Licence, GPL licence, N/A"],
         //validate property to check user has provided a value
         validate: (value) => { if (value) { return true } else { return "I need a value to continue" } },
+    },
+    {
+
+        type: "input",
+        message: "GitHub Username ?",
+        name: "git",
+        //validate property to check user has provided a value
+        validate: (value) => { if (value) { return true } else { return "I need a value to continue" } },
+
+    },
+    {
+
+        type: "input",
+        message: "Email ?",
+        name: "email",
+        //validate property to check user has provided a value
+        validate: (value) => { if (value) { return true } else { return "I need a value to continue" } },
+
     }
 
 ]
