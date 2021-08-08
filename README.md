@@ -11,6 +11,7 @@
 - [Testing](#testing)
 - [Questions](#questions)
 - [License](#license)
+- [Walk-through Video](#walk-through-video)
 - [Application Image](#application-image)
 
 ## Description
@@ -58,6 +59,11 @@ Answer all questions and check returned inputs.
 [MIT](https://opensource.org/licenses/MIT)
 
 You have the freedom to do as you like with this permissive software, as long as an original copy and license notice is included. I can not be held liable for this software.
+
+## Walk-through Video
+
+##### Video: [Readme Generator Walk-through](https://www.youtube.com/watch?v=OHQDLAttPGo)
+
 
 ## Application Image
 
