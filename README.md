@@ -19,11 +19,22 @@ This readme generator makes it easy for you to create perfect readme files by ju
 
 ## Installation
 
-1. Create a clone of this repo 2. Navigate to the directory of the cloned repo on your terminal 3. Install npm modules 3. use node index.js to start the ReadMe Generator
+Getting started make sure you have node.js and npm installed on your system.
+
+1. Create a clone of this repository ``git@github.com:mus-ali1/Professional-README-Generator.git``
+2. Navigate to the directory of the cloned repository using your terminal.
+3. Install the required npm modules by running ``npm install`` in your terminal and answer yes to all the prompts
+4. Type ``node index.js``  in the terminal to start the readme generator.
+
+If you have any trouble please refer to the walk-through video.
+
+
 
 ## Usage
 
-Navigate to your project directory in your terminal application and run node index.js command. Follow the instructions and a README.md file will be created.
+Navigate to your project directory in your terminal application and run ``node index.js`` command. Follow the instructions and a ``README.md`` file will be created.
+
+
 
 ## Credits
 
@@ -39,7 +50,7 @@ If you have any questions feel free to contact me here:
 
 ## Testing
 
-[  Answer all questions and check returned inputs.]
+Answer all questions and check returned inputs.
 
 ## License
 
@@ -49,4 +60,4 @@ You have the freedom to do as you like with this permissive software, as long as
 
 ## Application Image
 
- ![Image of Application](https://github.com/your-repository/)
+ ![Image of Application](./assets/images/ReadMeGeneratorScreenshot.png)
